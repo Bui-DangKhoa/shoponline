@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "npm --prefix client-admin install && npm --prefix client-admin run build && npm --prefix client-customer install && npm --prefix client-customer run build && npm --prefix server install",
+    "start": "npm --prefix server start"
+  },
   "dependencies": {
     "axios": "^1.13.6",
     "cross-env": "^10.1.0",
